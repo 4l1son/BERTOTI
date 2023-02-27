@@ -26,3 +26,30 @@ Exemplo: Um sistema de grande porte que precisa suporta diveresos acessos e não
 
 
 </ul>
+
+<h2>Diagrama de classes UML para um sistema acdemico</h2>
+--Model
+1-Model ClassesSalas 
+ string:professores
+ string:salas
+ Lista:alunos
+ int:id
+2-Model FaltasAlunos
+string:nomeAlunos
+int: faltas
+int :id
+3-Model NotasAlunos
+string: nomeAlunos
+int: notas
+int:id
+--Controler
+1-SalvarUmaClasseSala
+-addSenaoExistir
+-ecluir
+2-LancarFalta
+-alterarFalta
+3-LançarNota
+-alterarNota
+--View
+visualizarTodosOsDado
+
