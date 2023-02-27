@@ -28,28 +28,29 @@ Exemplo: Um sistema de grande porte que precisa suporta diveresos acessos e não
 </ul>
 
 <h2>Diagrama de classes UML para um sistema acdemico</h2>
---Model
+<h3>Model</h3>
+<ul>
 1-Model ClassesSalas 
- string:professores
- string:salas
- Lista:alunos
- int:id
+ <li>string:professores</li>
+ <li>string:salas</li>
+ <li>Lista:alunos</li>
+ <li>int:id</li>
 2-Model FaltasAlunos
-string:nomeAlunos
-int: faltas
-int :id
+ <li>string:nomeAlunos</li>
+ <li>int: faltas</li>
+<li>int :id</li>
 3-Model NotasAlunos
-string: nomeAlunos
-int: notas
-int:id
+ <li>string: nomeAlunos</li>
+<li>int: notas</li>
+ <li>int:id</li>
 --Controler
 1-SalvarUmaClasseSala
--addSenaoExistir
--ecluir
+ <li>addSenaoExistir</li>
+<li>excluir</li>
 2-LancarFalta
--alterarFalta
+ <li>alterarFalta</li>
 3-LançarNota
--alterarNota
+ <li>alterarNota</li>
 --View
 visualizarTodosOsDado
-
+</ul>
