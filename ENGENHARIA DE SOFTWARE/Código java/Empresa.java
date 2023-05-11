@@ -25,8 +25,17 @@ public class Empresa<Funcionario> {
 
     public static void main(String[] args) {
         Empresa empresa = new Empresa<>("alsmls", "aeronave");
+        Equipe equipe = new Equipe();
+        Scanner nomeL = new Scanner(System.in);
         System.out.println("Empresa: "+empresa.getNome());
         System.out.println("Ramo: "+empresa.getRamo());
+        System.out.print("Digite o nome do lider da equipe:");
+        equipe.nomeLider= nomeL.next();
+        System.out.println("Lider:"+equipe.getNomeLider());
+      
+        equipe.cadastroFuncionario("ssssss");;
+        
+
       
     }
     
