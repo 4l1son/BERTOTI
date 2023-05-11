@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Equipe {
     public String nomeLider;
@@ -9,15 +11,16 @@ public class Equipe {
         return nomeLider;
     }
     
-   private List<Funcionario> nomedoFuncionario  = new ArrayList<>();
+   List<Funcionario> nomedoFuncionario  = new LinkedList<>();
 
-   public void cadastroFuncionario(Funcionario fun){
-    String nome = fun.funcionarioNome;
-    nomedoFuncionario.add(nome);
+   public void cadastroFuncionario(String string){   
+   nomedoFuncionario.add(new Funcionario());
+
    }
 
-   public List<Funcionario> getFuncionario(){
-    return nomedoFuncionario;
+   public  List<Funcionario> getEquipe(){
+        return nomedoFuncionario;
+  
    }
 
 }
