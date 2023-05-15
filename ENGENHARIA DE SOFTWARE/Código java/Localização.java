@@ -7,9 +7,10 @@ public class Localização {
     public String showCep() {
         return cep;
     }
-    Empresa<Funcionario> empresa = new Empresa<>(nomedoEndereço, cep);
+    Empresa empresa = new Empresa(nomedoEndereço, cep);
     public String getEmpresa(){
-        return empresa.nome;
+        return empresa.getNome();
     }
+    public static void Localizacao(){}
     
 }

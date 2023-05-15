@@ -1,26 +1,27 @@
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Scanner;
 
-public class Equipe {
-    public String nomeLider;
+class Equipe {
+    private String nomeLider;
+    private List<Funcionario> funcionarios;
+
+    public Equipe() {
+        this.funcionarios = new ArrayList<>();
+    }
 
     public String getNomeLider() {
         return nomeLider;
     }
-    
-   List<Funcionario> nomedoFuncionario  = new LinkedList<>();
 
-   public void cadastroFuncionario(String string){   
-   nomedoFuncionario.add(new Funcionario());
+    public void setNomeLider(String nomeLider) {
+        this.nomeLider = nomeLider;
+    }
 
-   }
+    public void cadastrarFuncionario(Funcionario funcionario) {
+        funcionarios.add(funcionario);
+    }
 
-   public  List<Funcionario> getEquipe(){
-        return nomedoFuncionario;
-  
-   }
-
+    public List<Funcionario> getFuncionarios() {
+        return funcionarios;
+    }
 }

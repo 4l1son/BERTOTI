@@ -1,28 +1,20 @@
-
-
-/**
- * Funcionario
- */
 public class Funcionario {
-    public int funcionarioId;
-    public String funcionarioNome;
-    public String funcionarioCracha;
-   
-    public int getFuncionarioId() {
-        return funcionarioId;
+    private String nome;
+
+    public Funcionario(String nome) {
+        this.nome = nome;
     }
-    public void setFuncionarioId(int funcionarioId) {
-        this.funcionarioId = funcionarioId;
+
+    public String getNome() {
+        return nome;
     }
-  
-    public void setFuncionarioNome(String funcionarioNome) {
-        this.funcionarioNome = funcionarioNome;
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-    public String getFuncionarioCracha() {
-        return funcionarioCracha;
+
+    @Override
+    public String toString() {
+        return nome;
     }
-    public void setFuncionarioCracha(String funcionarioCracha) {
-        this.funcionarioCracha = funcionarioCracha;
-    }
-    
 }
