@@ -4,8 +4,11 @@ public class Localização {
     public String getNomedoEndereço() {
         return nomedoEndereço;
     }
-    public String showCep() {
+    public String getCep() {
         return cep;
+    }
+    public void setCep(String cep) {
+    	this.cep=cep;
     }
     Empresa empresa = new Empresa(nomedoEndereço, cep);
     public String getEmpresa(){
