@@ -1,5 +1,5 @@
 public class Funcionario {
-    private String nome;
+    public String nome;
 
     public Funcionario(String nome) {
         this.nome = nome;
@@ -11,10 +11,5 @@ public class Funcionario {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    @Override
-    public String toString() {
-        return nome;
     }
 }
