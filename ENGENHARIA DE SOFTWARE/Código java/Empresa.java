@@ -37,12 +37,10 @@ public class Empresa {
         System.out.println();
 
         
-        System.out.println("Teste de metodo set");
 
         System.out.println();
 
         
-        empresa.setNome("novoNometestandoSet");
         System.out.println("Nome da empresa:"+empresa.getNome());
 
         System.out.println();
@@ -56,11 +54,11 @@ public class Empresa {
         local.nomedoEndereço="rua teste da silva";
 
         
-        System.out.println("Cep da empresa:"+local.showCep());
+        System.out.println("Cep da empresa:"+local.getCep());
 
        
        
-        System.out.println("Local da empresa:"+local.empresa.getNome());
+        System.out.println("Nome da empresa:"+local.empresa.getNome());
         
 
         System.out.println("Nome do endereco:"+local.nomedoEndereço);
