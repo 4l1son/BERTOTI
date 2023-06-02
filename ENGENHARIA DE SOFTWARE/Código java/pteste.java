@@ -29,6 +29,14 @@ public class teste {
         String ramo = empresa.getRamo();
         Assertions.assertEquals("aeronave", ramo);
     }
+    
+    @Test
+    public void testSetRamo(){
+        Empresa empresa = new Empresa("testeNomeset","aeronave");
+        empresa.setRamo("nomeSetado");
+        String ramo = empresa.getRamo();
+        Assertions.assertEquals("nomeSetado",ramo);
+    }
 
     @Test
     public void testLocalizacao() {
