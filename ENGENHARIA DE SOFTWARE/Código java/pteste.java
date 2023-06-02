@@ -56,7 +56,7 @@ public class teste {
         
     }
     @Test
-    public void tesGetFuncionario(){
+    public void testGetFuncionario(){
         Equipe equipe = new Equipe();
         equipe.cadastrarFuncionario(new Funcionario("FuncionarioTeste1"));
         equipe.cadastrarFuncionario(new Funcionario("FuncionarioTeste2"));
@@ -71,7 +71,21 @@ public class teste {
         Assertions.assertEquals("FuncionarioTeste4", funcionarios.get(3).getNome());
     }
     
+    @Test
+    public void testGetNomeLider(){
+        Equipe equipe = new Equipe();
+        equipe.setNomeLider("teste1");
+        String nomeLider = equipe.getNomeLider();
+        Assertions.assertEquals("teste1",nomeLider);
+    }
     
+    @Test
+    public void testgetCep(){
+        Localização local = new Localização();
+        local.setCep("12247580");
+        String cep = local.getCep();
+        Assertions.assertEquals(cep,"12247580");
+    }
 
     
 }
