@@ -61,6 +61,12 @@ public class teste {
         Assertions.assertEquals("FuncionarioTeste3", funcionarios.get(2).getNome());
         Assertions.assertEquals("FuncionarioTeste4", funcionarios.get(3).getNome());
     }
+    @Test
+    public void tesGetFuncionario(){
+        
+    }
+    
+    
 
     
 }
