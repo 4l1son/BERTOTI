@@ -47,7 +47,16 @@ public class teste {
     }
 
     @Test
-    public void testEquipe() {
+    public void testEquipeCadastroFuncionario() {
+        Equipe equipe = new Equipe();
+        equipe.cadastrarFuncionario(new Funcionario("FuncionarioTeste1"));
+        
+        Assertions.assertEquals("FuncionariosTeste1",equipe.getFuncionarios().get(0));
+        
+        
+    }
+    @Test
+    public void tesGetFuncionario(){
         Equipe equipe = new Equipe();
         equipe.cadastrarFuncionario(new Funcionario("FuncionarioTeste1"));
         equipe.cadastrarFuncionario(new Funcionario("FuncionarioTeste2"));
@@ -60,10 +69,6 @@ public class teste {
         Assertions.assertEquals("FuncionarioTeste2", funcionarios.get(1).getNome());
         Assertions.assertEquals("FuncionarioTeste3", funcionarios.get(2).getNome());
         Assertions.assertEquals("FuncionarioTeste4", funcionarios.get(3).getNome());
-    }
-    @Test
-    public void tesGetFuncionario(){
-        
     }
     
     
