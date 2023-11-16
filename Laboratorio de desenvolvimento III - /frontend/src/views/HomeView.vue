@@ -113,7 +113,7 @@
           </p>
 
           <!-- Formulário de Edição -->
-          <div v-if="equipeParaEdicao.id !== 0">
+          <div v-if="modalEdicaoEquipe">
             <h3>Editar Equipe</h3>
             <form @submit.prevent="editarEquipe">
               <label for="editarLiderNome">Novo Líder:</label>
@@ -177,6 +177,7 @@ export default defineComponent({
 
       // Equipe
       showEquipe: false,
+      modalEdicaoEquipe:false,
       equipes: [] as EquipeModel[],
       equipeParaEdicao: { id: 0, liderNome: '', funcionarios: [] } as EquipeModel,
       equipeParaEdicaoNovo: { id: 0, liderNome: '', funcionarios: [] } as EquipeModel,
@@ -334,10 +335,10 @@ export default defineComponent({
         console.error('Erro ao obter equipes:', error);
       }
     },
-
     async editarLider(equipe: EquipeModel) {
-      this.equipeParaEdicao = { ...equipe }; // Cria uma cópia para evitar alterações diretas
-    },
+  this.equipeParaEdicao = { ...equipe };
+  this.modalEdicaoEquipe = true; // Update to use modoEdicaoEquipe
+},
 
     async deletarEquipe(id: number) {
       try {
