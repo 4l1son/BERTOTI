@@ -1,4 +1,4 @@
-<h1  >API REST - Cadastro de times</h1>
+<h1  >API REST - Cadastro de empresas</h1>
  <hr>
 <p align="left">O projeto se baseia em uma SPA que consome uma api para cadastro de empresa,funcionario e equipe</p>
 
@@ -15,7 +15,7 @@
   <li>Inciar a API</li>
   <li>Iniciar o front (npm run serve)</li>
 
-  <h1  >API REST - Cadastro de veículos</h1>
+  <h1  >API REST - Cadastro de empresa</h1>
  <hr>
 <p align="left">O projeto se baseia em uma API Rest que fornece os métodos (GET,POST,PUT,PATCH,DELETE) para controle  de uma empresa,funcionario e equipe. O front-end que consome esta api se encontra no mesmo repositório</p>
 
